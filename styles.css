@@ -3,81 +3,112 @@
 :root {
   --primary-color: navy;
 }
+#page-container {
+  position: relative;
+  min-height: 150vh;
+}
+#page-container2 {
+  position: relative;
+  min-height: 180vh;
+}
+#page-container3 {
+  position: relative;
+  min-height: 300vh;
+}
+#page-container4 {
+  position: relative;
+  min-height: 165vh;
+}
 
-.footer {
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
   display: block;
-  margin-top: 35em;
+  /* margin-top: 35vw; */
   background-image: linear-gradient(to right, whitesmoke, lightgray);
   border-top-color: transparent;
   padding: 3vw;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position:absolute;
+  bottom: 0;
+  width: 94%;
+  margin-top: 80vh;
+  z-index: 0;
+}
+.email {
+  position: absolute;
+  margin-left: 4vw;
+  margin-top: 10vh;
+ font-size: 1vw;
+ z-index: 5;
+ white-space: nowrap;
+
+
+}
+/* 
+.emailBox {
   position: relative;
-  z-index: 1;
-
-}
-.email{
-  position: block;
-  margin-left: 7em;
+  z-index: 4;
+  margin-left: 9vw;
+  margin-top: 9vh;
+  white-space: nowrap;
  
-  
-}
-
-.emailBox{
-  position: block;
-  margin-left: 9em;
-  margin-bottom: -1.7em;
-}
+} */
 
 .copyright {
-position: block;
-position: relative;
-z-index: 4;
-margin-left: 81em;
-width:-1em;
-margin-bottom: -1em;
+  position: block;
+  position: relative;
+  z-index: 4;
+  margin-left: 60vw;
+  text-align: right;
+  width: 27% ;
+  margin-bottom: -13vh;
+  font-size: 1vw;
 }
 .linkedin {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 50px;
+  width: 5%;
   position: block;
   z-index: 4;
   float: left;
-  margin-top: -.1em;
+  margin-top: 8vh;
+  white-space: nowrap;
 }
 
 .secondary-nav {
-  position: relative;
+  position: flex;
   z-index: 2;
   list-style-type: none;
   float: right;
-  width: 40em;
-  margin-right: 20em;
+  width: 40vw;
+  margin-right: 20vw;
   overflow: hidden;
-  margin-top: -.7em;
+  margin-top: 10vh;
   align-content: center;
-
 }
 
 .secondary-nav li {
   display: block;
-  float: left; 
-  font-size: 1em;
-  width: 9em;
+  float: left;
+  font-size: 1vw;
+  width: 9vw;
 }
 
 .footNav {
   display: block;
-  font-size: 1em;
-  width: 5em;
+  font-size: 1vw;
+  width: 5vw;
 }
 
 .secondary-nav li a:hover {
   list-style-type: none;
   text-decoration: none;
 }
-
 
 .linkedin a:hover {
   color: transparent;
@@ -90,61 +121,60 @@ body {
 
 .navbar {
   display: block;
-  height: 20em;
+  height: 30h;
   background-image: linear-gradient(to right, transparent, lightgray);
-  padding: 0em;
+  padding: 0vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom-left-radius: 71%;
   position: relative;
   z-index: 1;
   width: 100%;
-
 }
 
 .logo {
   text-decoration: none;
   font-weight: bold;
   color: black;
-  font-size: 3em;
+  font-size: 3vw;
   margin-left: 5vw;
-  /* margin-top: 10px */
   z-index: 3;
-  /* margin-bottom: -28vw; */
 }
 
 .logo .w {
   color: black;
   font-size: 15vw;
-  letter-spacing: -0.3em;
+  letter-spacing: -4vw;
   font-family: colonna mt;
   font-weight: 300;
   text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  vertical-align: 2vh;
 }
 
 .logo .r {
   color: var(--primary-color);
   font-size: 15vw;
-  letter-spacing: -0.3em;
-  vertical-align: -0.1em; 
+  letter-spacing: -1vw;
+  vertical-align: -0.7vw;
   font-family: colonna mt;
   font-weight: 300;
   text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .logo .three {
   font-size: 6vw;
-  /* letter-spacing: 0em; */
-  /* vertical-align: 0em; */
+  margin-left: -3.5vw;
+  vertical-align: -4vh;
   font-family: colonna;
   font-weight: 700;
   -webkit-text-fill-color: whitesmoke;
-  /* -webkit-text-stroke-width: 0px; */
   -webkit-text-stroke-color: black;
   text-shadow: 2px 2px 4px #000000;
+  position: relative;
+  z-index: 0;
 }
 
 .profilePic {
-  display:block;
-  margin-top: -20em;
+  display: block;
+  margin-top: -20vw;
   width: 20%;
   height: auto;
   margin-left: 20vw;
@@ -158,7 +188,7 @@ body {
   display: block;
   margin-left: 40vw;
   margin-bottom: 5vw;
-  margin-top: -15em;
+  margin-top: -15vw;
   white-space: nowrap;
 }
 
@@ -178,31 +208,28 @@ body {
   font-size: 8vw;
   color: white;
   -webkit-text-fill-color: whitesmoke;
-  /* -webkit-text-stroke-width: 0px; */
   text-shadow: 2px 2px 4px #000000;
 }
 
 nav {
   display: block;
-  position:relative;
-  /* z-index: 999; */
+  position: relative;
   background-image: var(--primary-color);
-  padding: 0em;
+  padding: 0vw;
 }
 
 .primary-nav {
   position: relative;
   z-index: 2;
   list-style-type: none;
-  float:inline-end;
+  float: inline-end;
   width: 63.5%;
-  /* margin: 0em; */
-  padding-left: 0em;
+  padding-left: 0vw;
   overflow: hidden;
   background-color: var(--primary-color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 36em; 
-  margin-top: -7em;
+  margin-left: 36vw;
+  margin-top: -7vw;
   background-image: -webkit-image-set();
 }
 
@@ -212,18 +239,17 @@ nav {
 
 .primary-nav li {
   display: block;
-  float: left; 
-  font-size: 1.2em;
-  width: 12.94em;
+  float: left;
+  font-size: 1.2vw;
+  width: 12.94vw;
 }
 
 .primary-nav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 0.5em 1.059em;
+  padding: 0.5vw 1.059vw;
   text-decoration: none;
-
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -232,8 +258,6 @@ nav {
   color: white;
 }
 
-
-
 .row:after {
   content: "";
   display: table;
@@ -241,55 +265,44 @@ nav {
 
 .column {
   display: block;
-  height: 10em;
-  margin-top: -22em;
+  height: 100%;
+  margin-top: -22vw;
   float: left;
   width: 28%;
   padding: 10px;
-  height: 60em;
-  /* margin-top: 0em; */
-  /* border-style: groove;
-  border-right-color: white; */
   background-color: whitesmoke;
-  /* border-right-width: thick; */
-  /* border-top-left-radius: 50%; */
-  /* border-top-right-radius: 50%; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /* border-bottom-left-radius: 35%; */
-  /* border-bottom-right-radius: 35%; */
-  margin-left: 2em;
+  margin-left: 2vw;
   background-image: linear-gradient(to bottom, white, lightgray);
   position: relative;
   z-index: 0;
 }
 
-
 .welcome {
   display: block;
   text-align: center;
-  margin-top: 19em; 
+  margin-top: 19vw;
+ 
+  
 }
 
 .welcomeParagraph {
   overflow: auto;
   padding: 1vw;
   text-align: justify;
+  width: 25vw ;
+  height: 65vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+ 
 }
-
-/* .secondary-nav {
-  font-size: 1.2em;
-  list-style-type: none;
-  text-decoration: none;
-  align-content: center;
-} */
 
 .contact {
   list-style-type: none;
   background-color: var(--primary-color);
   text-decoration: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 5em;
-  /* margin-top: 0em; */
+  margin-left: 5vw;
 }
 
 li .contact:hover {
@@ -297,24 +310,80 @@ li .contact:hover {
   color: white;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 700px) {
+.main {
+  display: block;
+  text-align: justify;
+  overflow-y: auto
+  scrollbar-width: thin;
+  margin-left: 32vw;
+  background-image: lightgray;
+  padding: 2vw;
+  
+}
+
+.UM {
+  text-align: center;
+}
+
+.computerScienceCloud {
+  display: block;
+  width: 95%;
+  height: auto;
+  margin-left: 2vw;
+  position: relative;
+}
+
+/* Responsive layout - when the screen is less than 700px wide,
+make
+  the
+  two
+  columns
+  stack
+  on
+  top
+  of
+  each
+  other
+  instead
+  of
+  next
+  to
+  each
+  other */
+  
+  @media
+  screen
+  and
+  (max-width: 700px) {
   .row {
     flex-direction: column;
   }
-} */
+}
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 400px) {
+/* Responsive layout - when the screen is less than 400px wide,
+make
+  the
+  navigation
+  links
+  stack
+  on
+  top
+  of
+  each
+  other
+  instead
+  of
+  next
+  to
+  each
+  other
+   */
+  @media
+  screen
+  and
+  (max-width: 400px) {
   .navbar a {
     float: none;
     width: 100%;
-  }
-} */
-
-@media only screen and (min-width: 680px) {
-  .mobile-menu-open,
-  .mobile-menu-close {
-    display: none;
   }
 }
