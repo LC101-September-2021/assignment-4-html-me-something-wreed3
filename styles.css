@@ -4,6 +4,14 @@
   --primary-color: navy;
 }
 
+.footer {
+  display: block;
+  margin-bottom: 0em;
+  background: lightgray;
+  padding: 0vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
 body {
   background: white;
   font-family: "Poppins", sans-serif;
@@ -100,7 +108,7 @@ img {
   margin-top: 22em;
 }
 
-.column .welcomepargraph {
+.column .welcomeParagraph {
   overflow: auto;
   padding: 1vw;
   text-align: justify;
