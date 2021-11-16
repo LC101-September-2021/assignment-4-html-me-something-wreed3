@@ -1,1 +1,242 @@
-/* Write your CSS here! */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,100&display=swap");
+
+:root {
+  --primary-color: navy;
+}
+
+body {
+  background: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background: lightgray;
+  padding: 0em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 3em;
+  margin-left: 5vw;
+  margin-top: 0px;
+  margin-bottom: -28vw;
+}
+
+.container {
+  margin-top: 0px;
+}
+
+img {
+  width: 20%;
+  height: auto;
+  margin-top: 10vw;
+  margin-left: 20vw;
+  margin-bottom: -7vw;
+  border-bottom-left-radius: 71%;
+  background-image: linear-gradient(to bottom, lightgray);
+}
+.w {
+  color: black;
+  font-size: 15vw;
+  letter-spacing: -0.3em;
+  font-family: colonna mt;
+  font-weight: 300;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.r {
+  color: var(--primary-color);
+  font-size: 15vw;
+  letter-spacing: -0.3em;
+  vertical-align: -0.1em;
+  font-family: colonna mt;
+  font-weight: 300;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.three {
+  font-size: 6vw;
+  letter-spacing: 0em;
+  vertical-align: 0em;
+  font-family: colonna;
+  font-weight: 700;
+  -webkit-text-fill-color: whitesmoke;
+  -webkit-text-stroke-width: 0px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 28%;
+  padding: 10px;
+  height: 60em;
+  /* border-style: groove;
+  border-right-color: white; */
+  margin-top: -24em;
+  background-color: whitesmoke;
+  /* border-right-width: thick; */
+  /* border-top-left-radius: 50%; */
+  /* border-top-right-radius: 50%; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: lightslategray;
+  /* border-bottom-left-radius: 35%; */
+  /* border-bottom-right-radius: 35%; */
+  margin-left: 2em;
+  background-image: linear-gradient(to bottom, white, lightgray);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 22em;
+}
+
+.column .welcomepargraph {
+  overflow: auto;
+  padding: 1vw;
+  text-align: justify;
+}
+
+.name {
+  margin-left: 40vw;
+  margin-bottom: 5vw;
+  margin-top: -10vw;
+  white-space: nowrap;
+}
+
+.wilbert {
+  font-size: 8vw;
+  color: black;
+  text-shadow: 2px 2px 4px lightgrey;
+}
+
+.reed {
+  font-size: 8vw;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 4px lightgrey;
+}
+
+.iii {
+  font-size: 8vw;
+  color: white;
+  -webkit-text-fill-color: whitesmoke;
+  -webkit-text-stroke-width: 0px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+ul.primary-nav {
+  list-style-type: none;
+  margin: 0em;
+  padding: 0em;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 35vw;
+  margin-top: -5vw;
+}
+
+li {
+  float: left;
+  font-size: 0.8vw;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0.5em 7em;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.current {
+  background-color: black;
+}
+
+.mobile-menu-open {
+  margin: 1em;
+  display: none;
+
+  cursor: pointer;
+}
+
+.mobile-menu-close {
+  display: block;
+  display: none;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-image: var(--primary-color);
+  height: 100vh;
+  padding: 1em;
+}
+
+/* .footer {
+  display: block;
+  margin-bottom: 0em;
+  background: lightgray;
+  padding: 0vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}*/
+
+.secondary-nav .contact {
+  list-style-type: none;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 5em;
+  margin-top: 0em;
+}
+
+.secondary-nav {
+  font-size: 1.2em;
+  list-style-type: none;
+  text-decoration: none;
+  align-content: center;
+}
+
+li .contact:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+} */
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+} */
+
+@media only screen and (min-width: 680px) {
+  .mobile-menu-open,
+  .mobile-menu-close {
+    display: none;
+  }
+}
