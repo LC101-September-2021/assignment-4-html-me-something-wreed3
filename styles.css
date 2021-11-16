@@ -6,10 +6,81 @@
 
 .footer {
   display: block;
-  margin-bottom: 0em;
-  background: lightgray;
-  padding: 0vw;
+  margin-top: 35em;
+  background-image: linear-gradient(to right, whitesmoke, lightgray);
+  border-top-color: transparent;
+  padding: 3vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  position: relative;
+  z-index: 1;
+
+}
+.email{
+  position: block;
+  margin-left: 7em;
+ 
+  
+}
+
+.emailBox{
+  position: block;
+  margin-left: 9em;
+  margin-bottom: -1.7em;
+}
+
+.copyright {
+position: block;
+position: relative;
+z-index: 4;
+margin-left: 81em;
+width:-1em;
+margin-bottom: -1em;
+}
+.linkedin {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 50px;
+  position: block;
+  z-index: 4;
+  float: left;
+  margin-top: -.1em;
+}
+
+.secondary-nav {
+  position: relative;
+  z-index: 2;
+  list-style-type: none;
+  float: right;
+  width: 40em;
+  margin-right: 20em;
+  overflow: hidden;
+  margin-top: -.7em;
+  align-content: center;
+
+}
+
+.secondary-nav li {
+  display: block;
+  float: left; 
+  font-size: 1em;
+  width: 9em;
+}
+
+.footNav {
+  display: block;
+  font-size: 1em;
+  width: 5em;
+}
+
+.secondary-nav li a:hover {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+.linkedin a:hover {
+  color: transparent;
 }
 
 body {
@@ -18,9 +89,16 @@ body {
 }
 
 .navbar {
-  background: lightgray;
+  display: block;
+  height: 20em;
+  background-image: linear-gradient(to right, transparent, lightgray);
   padding: 0em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom-left-radius: 71%;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+
 }
 
 .logo {
@@ -29,24 +107,12 @@ body {
   color: black;
   font-size: 3em;
   margin-left: 5vw;
-  margin-top: 0px;
-  margin-bottom: -28vw;
+  /* margin-top: 10px */
+  z-index: 3;
+  /* margin-bottom: -28vw; */
 }
 
-.container {
-  margin-top: 0px;
-}
-
-img {
-  width: 20%;
-  height: auto;
-  margin-top: 10vw;
-  margin-left: 20vw;
-  margin-bottom: -7vw;
-  border-bottom-left-radius: 71%;
-  background-image: linear-gradient(to bottom, lightgray);
-}
-.w {
+.logo .w {
   color: black;
   font-size: 15vw;
   letter-spacing: -0.3em;
@@ -55,69 +121,44 @@ img {
   text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.r {
+.logo .r {
   color: var(--primary-color);
   font-size: 15vw;
   letter-spacing: -0.3em;
-  vertical-align: -0.1em;
+  vertical-align: -0.1em; 
   font-family: colonna mt;
   font-weight: 300;
   text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.three {
+.logo .three {
   font-size: 6vw;
-  letter-spacing: 0em;
-  vertical-align: 0em;
+  /* letter-spacing: 0em; */
+  /* vertical-align: 0em; */
   font-family: colonna;
   font-weight: 700;
   -webkit-text-fill-color: whitesmoke;
-  -webkit-text-stroke-width: 0px;
+  /* -webkit-text-stroke-width: 0px; */
   -webkit-text-stroke-color: black;
   text-shadow: 2px 2px 4px #000000;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 28%;
-  padding: 10px;
-  height: 60em;
-  /* border-style: groove;
-  border-right-color: white; */
-  margin-top: -24em;
-  background-color: whitesmoke;
-  /* border-right-width: thick; */
-  /* border-top-left-radius: 50%; */
-  /* border-top-right-radius: 50%; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: lightslategray;
-  /* border-bottom-left-radius: 35%; */
-  /* border-bottom-right-radius: 35%; */
-  margin-left: 2em;
-  background-image: linear-gradient(to bottom, white, lightgray);
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-}
-
-.welcome {
-  text-align: center;
-  margin-top: 22em;
-}
-
-.column .welcomeParagraph {
-  overflow: auto;
-  padding: 1vw;
-  text-align: justify;
+.profilePic {
+  display:block;
+  margin-top: -20em;
+  width: 20%;
+  height: auto;
+  margin-left: 20vw;
+  border-bottom-left-radius: 71%;
+  background-image: linear-gradient(to bottom, lightgray);
+  position: relative;
+  z-index: 3;
 }
 
 .name {
+  display: block;
   margin-left: 40vw;
   margin-bottom: 5vw;
-  margin-top: -10vw;
+  margin-top: -15em;
   white-space: nowrap;
 }
 
@@ -137,89 +178,118 @@ img {
   font-size: 8vw;
   color: white;
   -webkit-text-fill-color: whitesmoke;
-  -webkit-text-stroke-width: 0px;
+  /* -webkit-text-stroke-width: 0px; */
   text-shadow: 2px 2px 4px #000000;
 }
 
-ul.primary-nav {
-  list-style-type: none;
-  margin: 0em;
+nav {
+  display: block;
+  position:relative;
+  /* z-index: 999; */
+  background-image: var(--primary-color);
   padding: 0em;
+}
+
+.primary-nav {
+  position: relative;
+  z-index: 2;
+  list-style-type: none;
+  float:inline-end;
+  width: 63.5%;
+  /* margin: 0em; */
+  padding-left: 0em;
   overflow: hidden;
   background-color: var(--primary-color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 35vw;
-  margin-top: -5vw;
-}
-
-li {
-  float: left;
-  font-size: 0.8vw;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 0.5em 7em;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: black;
-  color: white;
+  margin-left: 36em; 
+  margin-top: -7em;
+  background-image: -webkit-image-set();
 }
 
 .current {
   background-color: black;
 }
 
-.mobile-menu-open {
-  margin: 1em;
-  display: none;
-
-  cursor: pointer;
-}
-
-.mobile-menu-close {
+.primary-nav li {
   display: block;
-  display: none;
+  float: left; 
+  font-size: 1.2em;
+  width: 12.94em;
 }
 
-nav {
-  position: fixed;
-  z-index: 999;
-  width: 66%;
-  right: 0;
-  top: 0;
-  background-image: var(--primary-color);
-  height: 100vh;
-  padding: 1em;
-}
-
-/* .footer {
+.primary-nav li a {
   display: block;
-  margin-bottom: 0em;
-  background: lightgray;
-  padding: 0vw;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-}*/
+  color: white;
+  text-align: center;
+  padding: 0.5em 1.059em;
+  text-decoration: none;
 
-.secondary-nav .contact {
+}
+
+/* Change the link color to #111 (black) on hover */
+.primary-nav li a:hover {
+  background-color: black;
+  color: white;
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+}
+
+.column {
+  display: block;
+  height: 10em;
+  margin-top: -22em;
+  float: left;
+  width: 28%;
+  padding: 10px;
+  height: 60em;
+  /* margin-top: 0em; */
+  /* border-style: groove;
+  border-right-color: white; */
+  background-color: whitesmoke;
+  /* border-right-width: thick; */
+  /* border-top-left-radius: 50%; */
+  /* border-top-right-radius: 50%; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* border-bottom-left-radius: 35%; */
+  /* border-bottom-right-radius: 35%; */
+  margin-left: 2em;
+  background-image: linear-gradient(to bottom, white, lightgray);
+  position: relative;
+  z-index: 0;
+}
+
+
+.welcome {
+  display: block;
+  text-align: center;
+  margin-top: 19em; 
+}
+
+.welcomeParagraph {
+  overflow: auto;
+  padding: 1vw;
+  text-align: justify;
+}
+
+/* .secondary-nav {
+  font-size: 1.2em;
+  list-style-type: none;
+  text-decoration: none;
+  align-content: center;
+} */
+
+.contact {
   list-style-type: none;
   background-color: var(--primary-color);
   text-decoration: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-left: 5em;
-  margin-top: 0em;
-}
-
-.secondary-nav {
-  font-size: 1.2em;
-  list-style-type: none;
-  text-decoration: none;
-  align-content: center;
+  /* margin-top: 0em; */
 }
 
 li .contact:hover {
