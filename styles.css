@@ -46,17 +46,8 @@
  z-index: 5;
  white-space: nowrap;
 
-
 }
-/* 
-.emailBox {
-  position: relative;
-  z-index: 4;
-  margin-left: 9vw;
-  margin-top: 9vh;
-  white-space: nowrap;
- 
-} */
+
 
 .copyright {
   position: block;
@@ -78,6 +69,7 @@
   float: left;
   margin-top: 8vh;
   white-space: nowrap;
+  text-size-adjust: 100%;
 }
 
 .secondary-nav {
@@ -115,8 +107,23 @@
 }
 
 body {
+  display: block;
   background: white;
   font-family: "Poppins", sans-serif;
+  margin: 8px;
+}
+
+#mainHeading {
+  background-color: red;
+  display: block;
+  height: 30h;
+  background-image: linear-gradient(to right, transparent, lightgray);
+  padding: 0vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom-left-radius: 71%;
+  position: relative;
+  z-index: 1;
+  width: 100%;
 }
 
 .navbar {
@@ -252,7 +259,7 @@ nav {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+
 .primary-nav li a:hover {
   background-color: black;
   color: white;
@@ -284,6 +291,10 @@ nav {
   margin-top: 19vw;
  
   
+}
+
+.funParagraph {
+  color: green;
 }
 
 .welcomeParagraph {
@@ -333,57 +344,4 @@ li .contact:hover {
   position: relative;
 }
 
-/* Responsive layout - when the screen is less than 700px wide,
-make
-  the
-  two
-  columns
-  stack
-  on
-  top
-  of
-  each
-  other
-  instead
-  of
-  next
-  to
-  each
-  other */
-  
-  @media
-  screen
-  and
-  (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
-}
 
-/* Responsive layout - when the screen is less than 400px wide,
-make
-  the
-  navigation
-  links
-  stack
-  on
-  top
-  of
-  each
-  other
-  instead
-  of
-  next
-  to
-  each
-  other
-   */
-  @media
-  screen
-  and
-  (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
